@@ -13,10 +13,17 @@ The image below shows an example usage of the home page that general users will 
 
 <ins>Admin Page</ins>
 
-The image bellow shows how the admin user page looks like. This gives admins the ability to make changes to the data base, including Adding, Updating, Removing, and Viewing all the data.
+The image below shows what the admin user page looks like. This allows admins to make changes to the database, including Adding, Updating, Removing, and Viewing all the data.
 
 ![FrontEnd(User Admin page)](./images/Admin_UI.png)
 
 Here is an example of The entire Galaxy data table on the Oracle server that was used in the query from earlier, as seen on the admin page:
 
-![FrontEnd(User home page)](./images/Example_Data.png)
+![FrontEnd(Eaxmple Data)](./images/Example_Data.png)
+
+### BackEnd(Design)
+****
+
+For the backend, we first had to develop An ER diagram to visualize the relational database we would be creating:
+
+![FrontEnd(Database ER Diagram)](./images/Project_ER_Diagram.png)
