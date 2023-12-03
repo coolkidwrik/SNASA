@@ -19,4 +19,4 @@ The image bellow shows how the admin user page looks like. This gives admins the
 
 Here is an example of The entire Galaxy data table on the Oracle server that was used in the query from earlier, as seen on the admin page:
 
-![FrontEnd(User home page)](./images/Example_UI.png)
+![FrontEnd(User home page)](./images/Example_Data.png)
