@@ -26,4 +26,7 @@ Here is an example of The entire Galaxy data table on the Oracle server that was
 
 For the backend, we first had to develop An ER diagram to visualize the relational database we would be creating:
 
-![FrontEnd(Database ER Diagram)](./images/Project_ER_Diagram.png)
+![BackeEnd(Database ER Diagram)](./images/Project_ER_Diagram.png)
+
+
+This ER diagram was then converted to a relational model, where it was normalized using BCNF to reduce data redundancy. Details for this are in the [Relational Database Design](<./Relational Database Design>) directory
