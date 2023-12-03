@@ -26,8 +26,8 @@ error_reporting(E_ALL);
 // Set some parameters
 
 // Database access configuration
-$config["dbuser"] = "ora_wriksen";			// change "cwl" to your own CWL
-$config["dbpassword"] = "a53382818";	// change to 'a' + your student number
+$config["dbuser"] = "user_name";	// change to Oracle user name
+$config["dbpassword"] = "password";	// change to Oracle password
 $config["dbserver"] = "dbhost.students.cs.ubc.ca:1522/stu";
 $db_conn = NULL;	// login credentials are used in connectToDB()
 
