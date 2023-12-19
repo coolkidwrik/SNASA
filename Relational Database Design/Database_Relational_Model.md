@@ -1,56 +1,56 @@
 # Relational Model Design
 ## <ins>Schema and Functional Dependencies</ins>
 ### Galaxy
-- **__ID__**: *char[64]*, **Size**: *integer*, **Shape**: *char[64]*, **Type**: *char[64]*
+- <ins>**ID**: *char[64]*</ins>, **Size**: *integer*, **Shape**: *char[64]*, **Type**: *char[64]*
 - **Functional Dependencies:**
-  - *_ID_ -> Size, Shape, Type*
+  - *<ins>_ID_</ins> -> Size, Shape, Type*
   - *Type -> Shape*
   - *Shape -> Type*
 
 ### BlackHole
-- **_ID_**: *char[64]*, **MassType**: *char[64]*, **Radius**: *integer*, **Mass**: *integer*, **GalaxyId**: *char[64]*
+- <ins>**ID**: *char[64]*</ins>, **MassType**: *char[64]*, **Radius**: *integer*, **Mass**: *integer*, **GalaxyId**: *char[64]*
 - **Functional Dependencies:**
-  - *_ID_ -> MassType, Radius, Mass, GalaxyId*
+  - *<ins>_ID_</ins> -> MassType, Radius, Mass, GalaxyId*
   - *Mass -> MassType*
 
 ### PlanetarySystem
-- **_ID_**: *char[64]*, **Type**: *char[64]*, **Age**: *integer*, **GalaxyId**: *char[64]*
+- <ins>**ID**: *char[64]*</ins>, **Type**: *char[64]*, **Age**: *integer*, **GalaxyId**: *char[64]*
 - **Functional Dependencies:**
-  - *_ID_ -> Type, Age, GalaxyId*
+  - *<ins>_ID_</ins> -> Type, Age, GalaxyId*
 
 ### Asteroid
-- **_ID_**: *char[64]*, **Composition**: *char[64]*, **Type**: *char[64]*, **GalaxyId**: *char[64]*
+- <ins>**ID**: *char[64]*</ins>, **Composition**: *char[64]*, **Type**: *char[64]*, **GalaxyId**: *char[64]*
 - **Functional Dependencies:**
-  - *_ID_ -> Composition, Type, GalaxyId*
+  - *<ins>_ID_</ins> -> Composition, Type, GalaxyId*
   - *Composition -> Type*
   - *Type -> Composition*
 
 ### Meteor
-- **_ID_**: *char[64]*, **PlanetEnteredID**: *char[64]*
+- <ins>**ID**: *char[64]*</ins>, **PlanetEnteredID**: *char[64]*
 - **Functional Dependencies:**
-  - *_ID_, PlanetID -> Mass*
+  - *<ins>_ID_, PlanetID</ins> -> Mass*
 
 ### Nebula
-- **_ID_**: *char[64]*, **Type**: *char[64]*, **Magnitude**: *integer*, **GalaxyId**: *char[64]*
+- <ins>**ID**: *char[64]*</ins>, **Type**: *char[64]*, **Magnitude**: *integer*, **GalaxyId**: *char[64]*
 - **Functional Dependencies:**
-  - *_ID_ -> Type, Magnitude, GalaxyID*
+  - *<ins>_ID_</ins> -> Type, Magnitude, GalaxyID*
 
 ### Satellite
-- **_ID_**: *char[64]*, **PlanetId**: *char[64]*, **Mass**: *integer*
+- <ins>**ID**: *char[64]*</ins>, **PlanetId**: *char[64]*, **Mass**: *integer*
 - **Functional Dependencies:**
-  - *_ID_, PlanetID -> Mass*
+  - *<ins>_ID_, PlanetID</ins> -> Mass*
 
 ### Moon
-- **_ID_**: *char[64]*, **Radius**: *integer*
+- <ins>**ID**: *char[64]*</ins>, **Radius**: *integer*
 - **Functional Dependencies:**
-  - *_ID_ -> Radius*
+  - *<ins>ID</ins> -> Radius*
 
 ### Planet
-- **_ID_**: *char[64]*, **Declination**: *integer*, **Right Ascension**: *integer*, **Mass**: *integer*, **Radius**: *integer*, **Type**: *char[64]*, **planetarySystemId**: *char[64]*
+- <ins>**ID**: *char[64]*</ins>, **Declination**: *integer*, **Right Ascension**: *integer*, **Mass**: *integer*, **Radius**: *integer*, **Type**: *char[64]*, **planetarySystemId**: *char[64]*
 - **Functional Dependencies:**
-  - *_ID_ -> Declination, Right Ascension, Mass, Radius, Type, PlanetarySystemID*
+  - *<ins>_ID_</ins> -> Declination, Right Ascension, Mass, Radius, Type, PlanetarySystemID*
 
 ### Star
-- **_ID_**: *char[64]*, **Declination**: *integer*, **Right Ascension**: *integer*, **Type**: *char[64]*, **Mass**: *integer*, **Radius**: *integer*, **Temperature**: *integer*, **Luminosity**: *integer*, **planetarySystemId**: *char[64]*
+- <ins>**ID**: *char[64]*</ins>, **Declination**: *integer*, **Right Ascension**: *integer*, **Type**: *char[64]*, **Mass**: *integer*, **Radius**: *integer*, **Temperature**: *integer*, **Luminosity**: *integer*, **planetarySystemId**: *char[64]*
 - **Functional Dependencies:**
-  - *_ID_ -> Declination, RightAscension, Mass, Radius, Type, PlanetarySystemID*
+  - *<ins>_ID_</ins> -> Declination, RightAscension, Mass, Radius, Type, PlanetarySystemID*
