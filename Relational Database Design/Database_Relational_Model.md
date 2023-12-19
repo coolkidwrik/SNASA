@@ -68,4 +68,7 @@ Galaxy(<ins>**ID**: *char[64]*</ins>, **Size**: *integer*, **Shape**: *char[64]*
   - Galaxy(ID: char[64], Size: integer, Type: char[64])
   - GalaxyType(Shape char[64], Type: char[64])
 
+## SQL
+All DDL statements are described in the following document
+![FrontEnd(User Home page)](../SNASA.sql)
 
