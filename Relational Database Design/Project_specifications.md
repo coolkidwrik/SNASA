@@ -1,5 +1,5 @@
 # Project Specifications
-****
+
 ## <ins>Project description</ins>
 A database of data on stars, planets, star systems, and astronomical entities. This includes a collection of classifications.
 
