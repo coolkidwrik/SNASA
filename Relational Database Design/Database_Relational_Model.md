@@ -1,7 +1,7 @@
 # Relational Model Design
 ## <ins>Schema and Functional Dependencies</ins>
 ### Galaxy
-- **_ID_**: *char[64]*, **Size**: *integer*, **Shape**: *char[64]*, **Type**: *char[64]*
+- **__ID__**: *char[64]*, **Size**: *integer*, **Shape**: *char[64]*, **Type**: *char[64]*
 - **Functional Dependencies:**
   - *_ID_ -> Size, Shape, Type*
   - *Type -> Shape*
