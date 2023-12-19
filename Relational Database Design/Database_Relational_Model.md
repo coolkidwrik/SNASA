@@ -44,3 +44,28 @@ Planet(<ins>**ID**: *char[64]*</ins>, **Declination**: *integer*, **Right Ascens
 Star(<ins>**ID**: *char[64]*</ins>, **Declination**: *integer*, **Right Ascension**: *integer*, **Type**: *char[64]*, **Mass**: *integer*, **Radius**: *integer*, **Temperature**: *integer*, **Luminosity**: *integer*, **planetarySystemId**: *char[64]*)
 - **Functional Dependencies:**
   - *ID -> Declination, RightAscension, Mass, Radius, Type, PlanetarySystemID*
+
+## <ins>Normalization</ins>
+Each table was normalized using BCNF Decomposition. The following were changed accordingly:
+
+Star(<ins>**ID**: *char[64]*</ins>, **Declination**: *integer*, **Right Ascension**: *integer*, **Type**: *char[64]*, **Mass**: *integer*, **Radius**: *integer*, **Temperature**: *integer*, **Luminosity**: *integer*, **planetarySystemId**: *char[64]*)
+- this was decomposed into the following
+  - Star(ID: char[64], Declination: integer, Right Ascension: integer, Mass: integer, Radius: integer, Temperature: integer, Luminosity: integer, planetarySystemId: char[64])
+  - StarTemperature(Temperature: integer, Type: char[64])
+
+BlackHole(<ins>**ID**: *char[64]*</ins>, **MassType**: *char[64]*, **Radius**: *integer*, **Mass**: *integer*, **GalaxyId**: *char[64]*)
+- this was decomposed into the following
+  - BlackHole(ID: char[64], Radius: integer, Mass: integer, GalaxyId: char[64])
+  - BlackHoleMass (MassType: char[64], Mass: integer)
+
+Asteroid(<ins>**ID**: *char[64]*</ins>, **Composition**: *char[64]*, **Type**: *char[64]*, **GalaxyId**: *char[64]*)
+- this was decomposed into the following
+  - Asteroid(ID: char[64], Composition: char[64], GalaxyId: char[64])
+  - AsteroidComposition(Composition: char[64], Type: char[64])
+
+Galaxy(<ins>**ID**: *char[64]*</ins>, **Size**: *integer*, **Shape**: *char[64]*, **Type**: *char[64]*)
+- this was decomposed into the following
+  - Galaxy(ID: char[64], Size: integer, Type: char[64])
+  - GalaxyType(Shape char[64], Type: char[64])
+
+
